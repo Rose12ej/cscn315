@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CASE PROJECT 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="title">
+                <h1 id="heading">Rosalia's Creative Space</h1>
+            </div>
+            
+            <div id="nav">
+                <a href="index.html" class="button">Home</a>
+                <a href="music.html" class="button">Music</a>
+                <a href="movies.html" class="button">Movies</a>
+                <a href="compsci.html" class="button">Computer Science</a>
+            </div>
+            
+            <!-- 2. Include at least one photo on every page of your site using proper design elements. -->
+            <div id="imageContainer">
+                <img id="clickableImage" src="images/main1.jpeg" alt="Click to enlarge" style="width:200px; cursor:pointer;">
+            </div>
+            
+            <!-- Empty div where a dynamic image will be added -->
+            <div id="dynamicImageContainer"></div> 
+            
+            <!-- User form -->
+            <form id="userForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required /><br><br>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="20" /><br><br>
+
+                <label for="color">Favorite Color:</label>
+                <input type="text" id="color" name="color" placeholder="green" /><br><br>
+
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+            
+            <div id="results"></div>
+            <div id="messages"></div>
+        </div>
+        
+        <!-- Link javaScript files -->
+        <script src="Javascript/proj2.js"></script>
+        <script src="Javascript/proj5.js"></script>
+    </body>
+</html>
